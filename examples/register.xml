@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FormGroup>
+    <Form id="user_registration" version="1.0">
+        <Field id="first_name"
+               type="string"
+               label="First name"
+               tooltip="Please type in your name"
+               placeholder="first name...">
+            <Validator type="regex"
+                       regex="^[A-Za-z\-\ ]+$"
+                       message="Name contains invalid characters"
+            />
+            <Validator type="regex"
+                       regex="^[A-Z]"
+                       is_warning="True"
+                       message="Typical name should start with an uppercase letter"
+            />
+            <Validator type="length"
+                       min="3"
+                       max="20"
+                       message="Name should have between 3 and 20 characters"
+            />
+            <Validator type="required"
+                       message="This field is required"
+            />
+        </Field>
+        <Field id="last_name"
+               type="string"
+               label="Last name"
+               tooltip="Please type in your last name"
+               placeholder="last name...">
+            <Validator type="regex"
+                       regex="^[A-Za-z\-\ ]+$"
+                       message="Name contains invalid characters"
+            />
+            <Validator type="regex"
+                       regex="^[A-Z]"
+                       is_warning="True"
+                       message="Typical name should start with an uppercase letter"
+            />
+            <Validator type="length"
+                       min="3"
+                       max="20"
+                       message="Name should have between 3 and 20 characters"
+            />
+            <Validator type="required"
+                       message="This field is required"
+            />
+        </Field>
+    </Form>
+<!--    <Form id="user_registration" version="1.0">-->
+<!--        <Field />-->
+<!--    </Form>-->
+</FormGroup>
